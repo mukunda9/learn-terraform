@@ -118,6 +118,7 @@ resource "aws_instance" "shipping" {
   tags = {
     name = "shipping"
   }
+  name ="my-ec2-instance"
 }
 resource "aws_route53_record" "payment" {
   zone_id = "Z08448621CU0UQF90HZOH"
