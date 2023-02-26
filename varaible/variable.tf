@@ -14,3 +14,5 @@ variable "cli" {}
 output "cli" {
   value = var.cli
 }
+
+variable "input" {}
