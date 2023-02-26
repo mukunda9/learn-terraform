@@ -3,7 +3,7 @@ resource "aws_instance" "frontend" {
   instance_type = "t3.micro"
   vpc_security_group_ids = ["sg-0730089cc7ff79932"]
   tags = {
-    name=frontend
+    name="frontend"
   }
 }
 resource "aws_route53_record" "frontend" {
