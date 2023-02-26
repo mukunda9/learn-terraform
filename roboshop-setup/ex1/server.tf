@@ -131,7 +131,7 @@ resource "aws_instance" "payment" {
   instance_type = "t3.micro"
   vpc_security_group_ids = ["sg-0730089cc7ff79932"]
   tags = {
-    name= "payment"
+    name = "payment"
   }
 }
 resource "aws_route53_record" "redis" {
@@ -146,6 +146,6 @@ resource "aws_instance" "redis" {
   instance_type = "t3.micro"
   vpc_security_group_ids = ["sg-0730089cc7ff79932"]
   tags = {
-    name= "redis"
+    name = "redis"
   }
 }
