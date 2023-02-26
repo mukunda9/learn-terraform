@@ -3,7 +3,7 @@ resource "aws_instance" "frontend" {
   instance_type = "t3.micro"
   vpc_security_group_ids = ["sg-0730089cc7ff79932"]
   tags = {
-    name= "frontend"
+    name = "frontend"
   }
 }
 resource "aws_route53_record" "frontend" {
@@ -18,7 +18,7 @@ resource "aws_instance" "mongodb" {
   instance_type = "t3.micro"
   vpc_security_group_ids = ["sg-0730089cc7ff79932"]
   tags = {
-    name= "mongodb"
+    name = "mongodb"
   }
 }
 resource "aws_route53_record" "mongodb" {
@@ -40,7 +40,7 @@ resource "aws_instance" "catalogue" {
   instance_type = "t3.micro"
   vpc_security_group_ids = ["sg-0730089cc7ff79932"]
   tags = {
-    name= "catalogue"
+    name = "catalogue"
   }
 }
 resource "aws_route53_record" "user" {
@@ -55,7 +55,7 @@ resource "aws_instance" "user" {
   instance_type = "t3.micro"
   vpc_security_group_ids = ["sg-0730089cc7ff79932"]
   tags = {
-    name= "user"
+    name = "user"
   }
 }
 resource "aws_route53_record" "rabbitmq" {
@@ -71,7 +71,7 @@ resource "aws_instance" "rabbitmq" {
   instance_type = "t3.micro"
   vpc_security_group_ids = ["sg-0730089cc7ff79932"]
   tags = {
-    name= "rabbitmq"
+    name = "rabbitmq"
   }
 }
 resource "aws_route53_record" "mysql" {
@@ -86,7 +86,7 @@ resource "aws_instance" "mysql" {
   instance_type = "t3.micro"
   vpc_security_group_ids = ["sg-0730089cc7ff79932"]
   tags = {
-    name= "mysql"
+    name = "mysql"
   }
 }
 resource "aws_route53_record" "cart" {
@@ -101,7 +101,7 @@ resource "aws_instance" "cart" {
   instance_type = "t3.micro"
   vpc_security_group_ids = ["sg-0730089cc7ff79932"]
   tags = {
-    name= "cart"
+    name = "cart"
   }
 }
 resource "aws_route53_record" "shipping" {
@@ -116,7 +116,7 @@ resource "aws_instance" "shipping" {
   instance_type = "t3.micro"
   vpc_security_group_ids = ["sg-0730089cc7ff79932"]
   tags = {
-    name= "shipping"
+    name = "shipping"
   }
 }
 resource "aws_route53_record" "payment" {
