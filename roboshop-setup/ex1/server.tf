@@ -116,9 +116,9 @@ resource "aws_instance" "shipping" {
   instance_type = "t3.micro"
   vpc_security_group_ids = ["sg-0730089cc7ff79932"]
   tags = {
-    name = "shipping"
+    Name = "shipping"
   }
-  name ="my-ec2-instance"
+  name = "my-ec2-instance"
 }
 resource "aws_route53_record" "payment" {
   zone_id = "Z08448621CU0UQF90HZOH"
