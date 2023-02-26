@@ -2,7 +2,7 @@ varaible "sample" {
    default = "hello world"
 }
 output "sample" {
-  value = "var.sample"
+  value = var.sample
 }
 varaible "sample1" {}
 
