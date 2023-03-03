@@ -3,7 +3,7 @@ resource "aws_instance" "frontend" {
   instance_type = "t3.micro"
   vpc_security_group_ids = ["sg-0730089cc7ff79932"]
   tags = {
-    name = "frontend"
+    Name = "frontend"
   }
 }
 resource "aws_route53_record" "frontend" {
@@ -18,7 +18,7 @@ resource "aws_instance" "mongodb" {
   instance_type = "t3.micro"
   vpc_security_group_ids = ["sg-0730089cc7ff79932"]
   tags = {
-    name = "mongodb"
+    Name = "mongodb"
   }
 }
 resource "aws_route53_record" "mongodb" {
@@ -33,7 +33,7 @@ resource "aws_instance" "catalogue" {
   instance_type = "t3.micro"
   vpc_security_group_ids = ["sg-0730089cc7ff79932"]
   tags = {
-    name = "catalogue"
+    Name = "catalogue"
   }
 }
 
@@ -42,7 +42,7 @@ resource "aws_instance" "user" {
   instance_type = "t3.micro"
   vpc_security_group_ids = ["sg-0730089cc7ff79932"]
   tags = {
-    name = "user"
+    Name = "user"
   }
 }
 resource "aws_route53_record" "user" {
@@ -58,7 +58,7 @@ resource "aws_instance" "rabbitmq" {
   instance_type = "t3.micro"
   vpc_security_group_ids = ["sg-0730089cc7ff79932"]
   tags = {
-    name = "rabbitmq"
+    Name = "rabbitmq"
   }
 }
 resource "aws_route53_record" "rabbitmq" {
@@ -75,7 +75,7 @@ resource "aws_instance" "mysql" {
   instance_type = "t3.micro"
   vpc_security_group_ids = ["sg-0730089cc7ff79932"]
   tags = {
-    name = "mysql"
+    Name = "mysql"
   }
 }
 resource "aws_route53_record" "mysql" {
@@ -91,7 +91,7 @@ resource "aws_instance" "cart" {
   instance_type = "t3.micro"
   vpc_security_group_ids = ["sg-0730089cc7ff79932"]
   tags = {
-    name = "cart"
+    Name = "cart"
   }
 }
 resource "aws_route53_record" "cart" {
@@ -107,8 +107,8 @@ resource "aws_instance" "shipping" {
   instance_type = "t3.micro"
   vpc_security_group_ids = ["sg-0730089cc7ff79932"]
   tags = {
-    name = "shipping"
-    name ="my-ec2-instance"
+    Name = "shipping"
+    Name ="my-ec2-instance"
   }
 }
 resource "aws_route53_record" "shipping" {
@@ -124,7 +124,7 @@ resource "aws_instance" "payment" {
   instance_type = "t3.micro"
   vpc_security_group_ids = ["sg-0730089cc7ff79932"]
   tags = {
-    name = "payment"
+    Name = "payment"
   }
 }
 resource "aws_route53_record" "payment" {
@@ -140,7 +140,7 @@ resource "aws_instance" "redis" {
   instance_type = "t3.micro"
   vpc_security_group_ids = ["sg-0730089cc7ff79932"]
   tags = {
-    name = "redis"
+    Name = "redis"
   }
 }
 resource "aws_route53_record" "redis" {
